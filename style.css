@@ -1,0 +1,43 @@
+html{
+background-color: black;
+}
+
+.timer{
+  color: white;
+  position: absolute;
+  right: 35%;
+  font-size: 220px;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+input[type=text]{
+  border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 4px solid #42f448;
+    position:absolute;
+    left: 35%;
+    top: 65%;
+    font-family: monospace;
+    font-size: 50px;
+}
+
+input:focus{
+  border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 4px solid #42f448;
+    position: absolute;
+    left: 35%;
+    top: 65%;
+    -webkit-transition: scale(0,1) 2.0s ease-in-out;
+    transition: scale(0,1) 2.0s ease-in-out;
+
+  caret-color: #42f448;
+    font-size: 50px;
+    font-family: monospace;
+}
+
+input, select, textarea {
+color: #42f448;
+}

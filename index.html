@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<link rel="stylesheet" href="style.css">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="TheSwan.png">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+    <title>Welcome to the Swan</title>
+  </head>
+  <body>
+
+
+
+    <!-- Display the countdown timer in an element -->
+    <p id="demo"></p>
+
+    <body>
+        <div class="timer"> <span id="time">108:00</span> </div>
+    </body>
+<div id="time"class="">
+  <script type="text/javascript">
+  window.onload = function () {
+      var fiveMinutes = 60 * 108,
+          display = document.querySelector('#time');
+      startTimer(fiveMinutes, display);
+  };
+  </script>
+</div>
+
+
+
+<!--<form action="#">-->
+    <input autocomplete="off" type="text" name="txt" onkeypress="handle(event)" id="secret"/>
+<!--</form>-->
+
+<script id="timerstart">
+ function startTimer(duration, display) {
+    var timer = duration, minutes, seconds;
+    setInterval(function () {
+        minutes = parseInt(timer / 60, 10)
+        seconds = parseInt(timer % 60, 10);
+
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        display.textContent = minutes + ":" + seconds;
+
+        if (--timer < 0) {
+            timer = duration;
+        }
+    }, 1000);
+}
+
+
+</script>
+
+<!--handles behavior of timer when typing in the correct code-->
+
+
+
+<script type="text/javascript">
+var texts = document.getElementsByClassName("timer");
+
+
+function handle(e){
+  var exe = document.getElementById("secret").value;
+    if(exe === "4 8 15 16 23 42"){
+
+
+      var fiveMinutes = 60 * 108,
+      display = document.querySelector('#time');
+      startTimer(fiveMinutes, display);
+
+    }
+}
+</script>
+
+  </body>
+</html>
